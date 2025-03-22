@@ -1,0 +1,77 @@
+/* Gallery section custom styling with Bootstrap */
+#gallery {
+  background-color: #f9f4e8;
+  min-height: 100vh;
+}
+
+#gallery h2 {
+  font-family: "EB Garamond", serif;
+  color: #333;
+}
+
+.gallery-item {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.gallery-item img {
+  transition: transform 0.5s;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .card-body {
+  background-color: white;
+}
+
+.gallery-item .card-text {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+
+/* Lightbox styling */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 5px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}

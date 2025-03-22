@@ -1,0 +1,81 @@
+/* Letter section specific styling */
+#letter {
+  background-color: #f9f4e8;
+  /* Make the entire section scrollable */
+  overflow-y: auto;
+  padding: 2rem 0;
+}
+
+#letter .container {
+  /* Remove fixed height that might be causing overflow */
+  height: auto !important;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#letter .card {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#letter .card-body {
+  max-height: 70vh; /* Limit height */
+  overflow-y: auto; /* Make card body scrollable */
+}
+
+#letter .letter-content {
+  color: #333;
+  font-family: "EB Garamond", serif;
+  line-height: 1.7;
+}
+
+#letter .letter-content h2 {
+  font-family: "EB Garamond", serif;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+#letter .letter-content p {
+  margin-bottom: 1rem;
+}
+
+#letter .letter-content .signature {
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-height: 700px) {
+  #letter .card-body {
+    max-height: 60vh;
+    padding: 1.5rem !important;
+  }
+
+  #letter .letter-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #letter .letter-content p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-height: 600px) {
+  #letter .container {
+    padding-top: 0.5rem;
+  }
+
+  #letter .card-body {
+    max-height: 65vh;
+    padding: 1rem !important;
+  }
+
+  #letter .letter-content p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,106 @@
+#lockscreen {
+  background-color: #000;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.time-display {
+  font-size: 72px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.date-display {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.passcode-dots {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #888;
+  margin: 0 10px;
+}
+
+.dot.shake {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.dot.filled {
+  background-color: white;
+  border-color: white;
+}
+
+.passcode-hint {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+
+.numpad-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.numpad-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.numpad-btn[data-value="clear"],
+.numpad-btn[data-value="delete"] {
+  font-size: 16px;
+}

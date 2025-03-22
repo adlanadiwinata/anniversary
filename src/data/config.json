@@ -1,0 +1,11 @@
+{
+  "startDate": "2022-10-01",
+  "spotify": {
+    "playlistId": "your_playlist_id_here",
+    "clientId": "your_client_id_here",
+    "clientSecret": "your_client_secret_here"
+  },
+  "music": {
+    "background": "assets/audio/background-music.mp3"
+  }
+}

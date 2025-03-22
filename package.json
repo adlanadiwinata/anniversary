@@ -1,0 +1,22 @@
+{
+  "name": "anniversary-gift",
+  "version": "1.0.0",
+  "description": "A static website for an anniversary gift featuring a lock screen, envelope interaction, and a countdown of days together.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "anniversary",
+    "gift",
+    "static",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
